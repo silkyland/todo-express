@@ -38,6 +38,10 @@ else
     print_message "TypeScript is already installed"
 fi
 
+# create todos-express folder and enter it
+mkdir todos-express
+cd todos-express
+
 # Initialize the project
 print_message "Initializing the project"
 npm init -y

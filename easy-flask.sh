@@ -20,6 +20,10 @@ else
     print_message "Python3 is already installed"
 fi
 
+# Create todos-flask folder and enter it
+mkdir todos-flask
+cd todos-flask
+
 # Install virtualenv if not installed
 if ! command -v virtualenv &> /dev/null
 then

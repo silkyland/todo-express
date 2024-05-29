@@ -19,10 +19,10 @@ then
         echo "Go installation file already exists"
     else
         wget https://go.dev/dl/go1.22.3.linux-amd64.tar.gz
+    	tar -xvf go1.22.3.linux-amd64.tar.gz
+		sudo rm -rf /usr/local/go
+		sudo mv go /usr/local
     fi
-    tar -xvf go1.22.3.linux-amd64.tar.gz
-    sudo rm -rf /usr/local/go
-    sudo mv go /usr/local
     
     echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
     echo 'export GOPATH=$HOME/go' >> ~/.bashrc
